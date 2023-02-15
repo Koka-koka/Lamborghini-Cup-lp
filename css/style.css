@@ -198,3 +198,159 @@ body {
 .info__table td {
   padding-bottom: 20px;
 }
+
+.track {
+  padding-bottom: 90px;
+  padding-top: 50px;
+  background-image: url(../images/track-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.track__title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #040404;
+  margin-bottom: 30px;
+}
+
+.track__text {
+  max-width: 435px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #040404;
+  margin-bottom: 250px;
+}
+
+.track__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.evo {
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+.evo-black {
+  background-color: #363636;
+  color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.evo-black__inner {
+  position: relative;
+}
+
+.evo-black__inner::before {
+  content: '';
+  background-image: url(../images/dec-1.svg);
+  position: absolute;
+  top: 210px;
+  left: -140px;
+  width: 185px;
+  height: 213px;
+}
+
+.evo-black__inner::after {
+  content: '';
+  background-image: url(../images/dec-2.svg);
+  position: absolute;
+  top: 295px;
+  left: -35px;
+  width: 498px;
+  height: 572px;
+}
+
+.evo-black__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.evo-black__title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 300;
+  padding-right: 50px;
+}
+
+.evo-black__infobox {
+  flex-basis: 437px;
+}
+
+.evo-black__text {
+  line-height: 17px;
+}
+
+.evo-black__text:first-child {
+  margin-bottom: 30px;
+}
+
+.evo-black__img {
+  display: block;
+  margin: 200px auto 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.evo__descr-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 65px;
+}
+
+.evo__descr-list dd {
+  text-transform: uppercase;
+}
+
+.evo-white__inner {
+  padding-top: 125px;
+  position: relative;
+}
+
+.evo-white__inner::before {
+  content: '';
+  background-image: url(../images/dec-3.png);
+  position: absolute;
+  top: -40px;
+  left: 360px;
+  width: 274px;
+  height: 257px;
+}
+
+.evo-white__inner::after {
+  content: '';
+  background-image: url(../images/dec-4.png);
+  position: absolute;
+  top: 115px;
+  left: 600px;
+  width: 324px;
+  height: 311px;
+}
+
+.evo-white__text {
+  margin-bottom: 30px;
+}
+
+.evo-white__text:first-child {
+  max-width: 285px;
+}
+
+.evo-white__text:nth-child(2) {
+  max-width: 437px;
+}
+
+.evo-white__text:nth-child(3) {
+  max-width: 590px;
+  margin-bottom: 0;
+}
+
+.evo-white__video {
+  margin-top: 100px;
+  align-self: center;
+}
