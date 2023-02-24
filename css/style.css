@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   color: #040404;
   font-size: 14px;
@@ -353,4 +357,152 @@ body {
 .evo-white__video {
   margin-top: 100px;
   align-self: center;
+}
+
+.blog {
+  margin-bottom: 100px;
+}
+
+.blog__title {
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.blog__item-img {
+  margin-bottom: 20px;
+}
+
+.blog__item-title {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  min-height: 46px;
+  margin-bottom: 10px;
+}
+
+.blog__item-text {
+  margin-bottom: 10px;
+}
+
+.blog__item-link {
+  font-weight: 400;
+  font-size: 12px;
+  color: #363636;
+}
+
+.blog__slider {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.blog__btn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  cursor: pointer;
+}
+
+.swiper-button-left {
+  transform: translateX(-42px);
+}
+
+.swiper-button-right {
+  transform: translateX(8px);
+}
+
+.blog__quote {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0 50px;
+}
+
+.blog__quote-box {
+  flex-basis: 434px;
+}
+
+.blockquote {
+  margin-bottom: 30px;
+}
+
+.blockquote__name {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  color: #040404;
+  margin-bottom: 10px;
+}
+
+.blockquote__name span {
+  display: block;
+  font-size: 12px;
+  color: #9f6b08;
+  margin-bottom: 3px;
+}
+
+.blockquote__text {
+  font-style: italic;
+}
+
+.footer {
+  background: #363636;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+
+.footer__info-item {
+  margin-bottom: 40px;
+}
+
+.footer__info-item dt,
+.footer__address-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer__info-item dd {
+  margin-bottom: 10px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.footer__address {
+  flex-basis: 462px;
+}
+
+.footer__address-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+
+#map {
+  height: 255px;
 }
