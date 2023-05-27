@@ -22,6 +22,10 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   color: #040404;
   font-size: 14px;
@@ -55,6 +59,12 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
+}
+
+.menu-mobile,
+.menu-btn
+{
+  display: none;
 }
 
 .menu-list {
@@ -505,4 +515,121 @@ body {
 
 #map {
   height: 255px;
+}
+
+@media (max-width:1100px) {
+  .promo {
+    background-position: left center;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+    gap: 0 20px;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  .nav {
+    align-items: center;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
+    font-size: 42px;
+  }
+  .subtitle span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:840px) {
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .menu--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding-top: 100px;
+    background-color: #000;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+  }
+  .menu-link {
+    color: #fff;
+    font-size: 3vh;
+    display: block;
+    padding: 20px 0;
+  }
+  .logo {
+    z-index: 10;
+  }
+  .info__part-textbox {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .info__part {
+    display: block;
+  }
+  .info__part:nth-child(2) .info__text,
+  .info__part:last-child .info__text,
+  .info__table
+   {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 32px;
+  }
+  .subtitle span {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 340px) {
+  .title {
+    font-size: 42px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .subtitle span {
+    font-size: 24px;
+  }
+  .menu-link {
+    padding: 15px 0;
+  }
+}
+
+
+
 }
