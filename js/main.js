@@ -9,13 +9,18 @@ menuBtn.addEventListener('click', () => {
 // Swiper Slider
 const swiper = new Swiper('.swiper', {
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-right',
     prevEl: '.swiper-button-left',
   },
-
+    
+  breakpoints: {
+    540: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },  
+  }
 });
 
 // Google map

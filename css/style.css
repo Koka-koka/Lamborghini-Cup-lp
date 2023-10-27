@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -23,7 +24,7 @@ li {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -142,7 +143,7 @@ body {
 
 .info {
   margin-bottom: 100px;
-  background-color: : #F5F5F5;
+  background-color: #F5F5F5;
 }
 
 .info__part {
@@ -543,9 +544,28 @@ body {
   .subtitle span {
     font-size: 32px;
   }
+  .evo-black__inner::before{
+        content: none;
+  }
+  .evo-black__inner::after {
+    top: 95px;
+    left: 235px;
+  }
+    
+  .evo-white__inner::after {
+        content: none;
+    }
 }
 
 @media (max-width:840px) {
+    .header {
+    padding-top: 25px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;    
+  }
   .menu-btn {
     display: flex;
     flex-direction: column;
@@ -568,12 +588,12 @@ body {
   .menu--open {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0;
     width: 100%;
     padding-top: 100px;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.8);
     height: 100vh;
     z-index: 5;
     text-align: center;
@@ -593,14 +613,45 @@ body {
   }
   .info__part {
     display: block;
+      text-align: center;
   }
   .info__part:nth-child(2) .info__text,
   .info__part:last-child .info__text,
   .info__table
    {
-    max-width: none;
+    max-width: 100%;
     width: 100%;
   }
+  .track__text {
+        margin-bottom: 100px;
+    }
+   .info__table {
+        text-align: left;
+    }    
+  .evo-black__info {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  } 
+  .evo-black__img {
+        margin-top: 100px;
+  }    
+  .evo-black__inner::after {
+    content: none;
+  }
+  .evo-white__inner::before {
+    top: -40px;
+    left: 260px;
+  }
+  .evo__descr-list {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap:20px;
+  } 
+  .blog__quote {
+        display: block;
+        text-align: center;
+  }    
 }
 
 @media (max-width: 560px) {
@@ -613,6 +664,30 @@ body {
   .subtitle span {
     font-size: 26px;
   }
+  .evo-white__inner::before {
+    content: none;
+  }
+  .blog,.track{
+        text-align: center;
+    }
+  .track__text{
+        max-width: 100%;
+    }
+  .footer {
+        text-align: center
+    }
+    .footer__top{
+        display: block;
+    }
+    .social-list{
+        justify-content: center;
+    }
+    .footer__bottom{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    
 }
 
 @media (max-width: 340px) {
